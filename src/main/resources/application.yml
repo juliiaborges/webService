@@ -1,0 +1,13 @@
+server:
+  port: 8761  # Porta onde o servidor Eureka será executado
+
+eureka:
+  client:
+    register-with-eureka: false  # O próprio servidor não precisa se registrar
+    fetch-registry: false        # Não busca outros registros
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+
+spring:
+  application:
+    name: eureka-server
