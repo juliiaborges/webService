@@ -1,0 +1,14 @@
+# Configurações do servidor
+server:
+  port: 8082  # Ajuste a porta para cada serviço (8081 para User, 8082 para Task, etc.)
+
+# Configurações do Eureka Client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  # Endereço do Eureka Server
+    register-with-eureka: true                    # Permitir registro no Eureka
+    fetch-registry: true                          # Pegar o registro de outros serviços
+spring:
+  application:
+    name: user-service                            # Nome do serviço (mude para cada serviço)
