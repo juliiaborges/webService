@@ -11,4 +11,4 @@ eureka:
     fetch-registry: true                          # Pegar o registro de outros serviços
 spring:
   application:
-    name: user-service                            # Nome do serviço (mude para cada serviço)
+    name: task-service                            # Nome do serviço (mude para cada serviço)
